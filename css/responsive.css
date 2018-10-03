@@ -1,0 +1,76 @@
+
+@media screen and (min-width:1023px) and (max-width: 1025px)  {
+	h1 {
+		font-size: 40px;
+	}
+	.deck {
+		height: 580px;
+	}
+
+}
+@media screen and (max-width:700px) {
+	.container {
+		width: auto;
+		height: auto;
+	}
+	.deck {
+		width: 90%;
+		height: 600px;
+	}
+	.deck .card {
+		width: 23%;
+		height: 20%;
+		background-size: cover;		
+	}
+	h1 {
+		font-size: 50px;
+	}
+	.game-won-screen {
+		height: auto;
+		width: auto;
+	}
+	.game-won-content {
+		width: auto;
+	}
+	.game-won-screen h2 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+	}
+	.game-won-screen h3 {
+	    font-size: 1em;
+	}
+
+@media screen and (max-width:450px) {
+	.deck {
+		width: 90%;
+		height: 450px;
+	}
+	h1 {
+		font-size: 40px;
+	}
+	.restart-text {
+		display: none;
+	}
+	.score-panel {
+		width: 280px;
+		font-size: 14px;
+	}
+	.timer {
+    margin-left: 1px;
+    padding: 0;
+	}
+	.game-won-content {
+		width: auto;
+	}
+	.game-won-screen h2 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+	}
+	.game-won-screen h3 {
+	    font-size: 1em;
+	}
+}
+
+

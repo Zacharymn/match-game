@@ -1,0 +1,216 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, turquoise, white, pink);
+    font-family: 'Righteous', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Righteous', sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    margin: 0;
+}
+
+/*
+ * Styles for the deck of cards
+ */
+
+.deck {
+    width: 660px;
+    height: 680px;
+    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%); 
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+    border: 2px solid black;
+}
+
+.deck .card {
+    height: 125px;
+    width: 125px;
+    background-image: url('../img/sunset125.jpg'); /*background from www.freeimages.com*/
+    background-size: cover;
+    font-size: 0;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    border: 2px solid white;
+}
+
+
+.deck .card.open {
+    transform: rotateY(0);
+    background: #02b3e4;
+    cursor: default;
+}
+
+.deck .card.show {
+    font-size: 33px;
+}
+
+.deck .card.match {
+    cursor: default;
+    background: #02ccba;
+    font-size: 33px;
+}
+
+.card.open.show.wrong  {
+    background-color: red;
+}
+
+.card.open.show.right {
+    background-color: #00FF00;
+}
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+    text-align: left;
+    width: 355px;
+    margin-bottom: 10px;
+}
+
+.score-panel h3 {
+    font-family: 'Righteous', sans;
+    text-align: center;
+}
+
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    float: left;
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.fa-star.gold {
+    color: gold;
+}
+
+.score-panel .restart {
+    float: right;
+    cursor: pointer;
+    margin: 0;
+}
+
+.timer {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.time {
+    margin-left: 5px;
+}
+
+
+/* 
+* Styles for the Game Won screen:
+*/
+
+
+.game-won-screen {
+    font-family: 'Open Sans', sans-serif;
+    z-index: 10;
+    visibility: hidden;
+    position: absolute;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    background-color: rgba(231,231,216,.8);
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    border-radius: 8px;
+}
+
+.game-won-content {
+    margin: 5%;
+    height: auto;
+    width: auto;
+}
+
+.game-won-screen h2 {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+}
+.game-won-screen h3 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+.game-won-screen p {
+    margin: 0;
+    padding: 0;
+}
+
+.game-won-screen .stars {
+    margin: 0;
+    padding: 0;
+    margin: 0 5px 0 0;
+    float: center;
+}
+
+.game-won-screen .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+button {
+    cursor: pointer;
+    min-height: 48px;
+    min-width: 88px;
+    background-color: pink;
+    margin: 1%;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    font-size: 1em;
+    border-radius: 8px;
+}
+
+button:active {
+    box-shadow: none;
+}
+
+
+
+
+
+
